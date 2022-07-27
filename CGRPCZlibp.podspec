@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
 
-    s.name = 'CGRPCZlib'
+    s.name = 'CGRPCZlibp'
     s.module_name = 'CGRPCZlib'
-    s.version = '1.6.0'
+    s.version = '1.8.2'
     s.license = { :type => 'Apache 2.0', :file => 'LICENSE' }
     s.summary = 'Compression library that provides in-memory compression and decompression functions'
     s.homepage = 'https://www.grpc.io'
@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
     s.osx.deployment_target = '10.12'
     s.tvos.deployment_target = '10.0'
     s.watchos.deployment_target = '6.0'
-    s.source = { :git => "https://github.com/grpc/grpc-swift.git", :tag => s.version }
+    s.source = { :git => "https://github.com/portto/grpc-swift.git", :tag => s.version }
 
     s.source_files = 'Sources/CGRPCZlib/**/*.{swift,c,h}'
 

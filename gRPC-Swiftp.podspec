@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
 
-    s.name = 'gRPC-Swift'
+    s.name = 'gRPC-Swiftp'
     s.module_name = 'GRPC'
-    s.version = '1.6.0'
+    s.version = '1.8.2'
     s.license = { :type => 'Apache 2.0', :file => 'LICENSE' }
     s.summary = 'Swift gRPC code generator plugin and runtime library'
     s.homepage = 'https://www.grpc.io'
@@ -13,11 +13,11 @@ Pod::Spec.new do |s|
     s.osx.deployment_target = '10.12'
     s.tvos.deployment_target = '10.0'
     s.watchos.deployment_target = '6.0'
-    s.source = { :git => "https://github.com/grpc/grpc-swift.git", :tag => s.version }
+    s.source = { :git => "https://github.com/portto/grpc-swift.git", :tag => s.version }
 
     s.source_files = 'Sources/GRPC/**/*.{swift,c,h}'
 
-    s.dependency 'CGRPCZlib', s.version.to_s
+    s.dependency 'CGRPCZlibp', s.version.to_s
     s.dependency 'Logging', '>= 1.4.0', '< 2.0.0'
     s.dependency 'SwiftNIO', '>= 2.32.0', '< 3.0.0'
     s.dependency 'SwiftNIOExtras', '>= 1.4.0', '< 2.0.0'
